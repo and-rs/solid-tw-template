@@ -9,6 +9,7 @@ import { Suspense } from "solid-js";
 import { isServer } from "solid-js/web";
 import { getCookie } from "vinxi/http";
 import "./globals.css";
+import Layout from "./components/layout";
 
 function getServerCookies() {
   "use server";
@@ -26,7 +27,9 @@ export default function App() {
         <>
           <ColorModeScript storageType={storageManager.type} />
           <ColorModeProvider storageManager={storageManager}>
-            <Suspense>{props.children}</Suspense>
+            <Suspense>
+              <Layout>{props.children}</Layout>
+            </Suspense>
           </ColorModeProvider>
         </>
       )}

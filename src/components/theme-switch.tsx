@@ -21,7 +21,7 @@ export function ThemeSwitch() {
     <Show
       when={mounted()}
       fallback={
-        <Button variant={"ghost"} size={"icon"}>
+        <Button disabled variant={"ghost"} size={"icon"}>
           <Ellipsis />
         </Button>
       }
