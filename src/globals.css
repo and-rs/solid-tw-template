@@ -1,11 +1,10 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
-/* @custom-variant dark (&:is(.dark *)); */
 @custom-variant dark (&:is([data-kb-theme="dark"], [data-kb-theme="dark"] *));
 
 @theme inline {
-  --font-sans: var(--font-sans);
+  --font-sans: "Work Sans Variable", sans-serif;
   --font-mono: var(--font-mono);
   --color-background: var(--background);
   --color-foreground: var(--foreground);

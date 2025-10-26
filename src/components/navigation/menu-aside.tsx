@@ -23,13 +23,13 @@ export default function MenuAside() {
       <SheetTrigger as="div">
         <MenuButton />
       </SheetTrigger>
-      <SheetContent class="w-[90%] sm:max-w-xl" position={"left"}>
+      <SheetContent class="w-[90%] sm:max-w-xl space-y-4" position={"left"}>
         <SheetDescription class="sr-only">Menu movil</SheetDescription>
-        <SheetTitle class="self-center mt-4 text-4xl transition-all duration-150 -tracking-[0.07em]">
+        <SheetTitle class="self-center text-4xl font-normal transition-all duration-150 -tracking-[0.07em]">
           Mochi
         </SheetTitle>
 
-        <nav class="flex flex-col gap-4 p-4" role="navigation">
+        <nav class="flex flex-col gap-4" role="navigation">
           <For each={pages}>
             {(page) => (
               <A href={page.href}>
@@ -45,7 +45,7 @@ export default function MenuAside() {
 
 function MenuButton() {
   return (
-    <Button aria-label="View cart" variant={"ghost"} size={"icon"}>
+    <Button variant={"ghost"} size={"icon"}>
       <Menu />
     </Button>
   );

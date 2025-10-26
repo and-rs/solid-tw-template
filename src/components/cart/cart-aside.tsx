@@ -28,7 +28,7 @@ export default function CartAside() {
 
 function CartButton() {
   return (
-    <Button aria-label="View cart" variant={"ghost"} size={"icon"}>
+    <Button variant={"ghost"} size={"icon"}>
       <ShoppingCart />
     </Button>
   );

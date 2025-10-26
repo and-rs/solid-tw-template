@@ -1,3 +1,4 @@
+import "@fontsource-variable/work-sans";
 import {
   ColorModeProvider,
   ColorModeScript,
@@ -8,8 +9,8 @@ import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import { isServer } from "solid-js/web";
 import { getCookie } from "vinxi/http";
-import "./globals.css";
 import Layout from "./components/layout";
+import "./globals.css";
 
 function getServerCookies() {
   "use server";

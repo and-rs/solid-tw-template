@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>yo miste white</div>;
+  return <div class="text-3xl font-bold">yo miste white</div>;
 }

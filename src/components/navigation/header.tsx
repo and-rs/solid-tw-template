@@ -21,9 +21,9 @@ export function Header() {
 
         <HeaderLeft />
 
-        {/* <div class="col-start-3 place-self-end mx-1 h-full sm:hidden"> */}
-        {/*   <CartAside /> */}
-        {/* </div> */}
+        <div class="col-start-3 self-center place-self-end sm:hidden">
+          <CartAside />
+        </div>
       </div>
     </header>
   );
@@ -33,7 +33,7 @@ export function HeaderRight() {
   return (
     <nav class="hidden gap-4 self-center sm:flex" role="navigation">
       <A href="/">Inicio</A>
-      <A href="/catalogue">Todos</A>
+      <A href="/catalogue">Todo</A>
       <A href="/about">Nosotros</A>
     </nav>
   );
